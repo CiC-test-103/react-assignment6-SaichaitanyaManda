@@ -1,0 +1,65 @@
+@import '../variables.css';
+
+.card {
+  max-width: 730px;
+  margin: 2rem auto;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  font-family: var(--ff-base);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.cardImage {
+  height: 200px;
+  background-image: url('/drawers.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.cardContent {
+  padding: 2rem;
+}
+
+.cardTitle {
+  color: var(--clr-veryDarkGrayishBlue);
+  font-size: 1.25rem;
+  font-weight: var(--fw-bold);
+  margin-bottom: 1rem;
+}
+
+.cardText {
+  color: var(--clr-desaturatedDarkBlue);
+  font-size: var(--font-paragraph);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+  }
+  
+  .cardImage {
+    width: 285px;
+    height: auto;
+    background-position: left;
+  }
+  
+  .cardContent {
+    padding: 2.5rem;
+  }
+  
+  .cardTitle {
+    font-size: 1.5rem;
+  }
+}

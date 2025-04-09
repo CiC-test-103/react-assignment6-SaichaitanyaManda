@@ -1,0 +1,29 @@
+@import '../variables.css';
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.authorAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-right: 1rem;
+  background-image: url('avatar-michelle.jpg');
+  background-size: cover;
+}
+
+.authorName {
+  color: var(--clr-veryDarkGrayishBlue);
+  font-size: var(--font-paragraph);
+  font-weight: var(--fw-bold);
+  margin: 0;
+}
+
+.authorDate {
+  color: var(--clr-grayishBlue);
+  font-size: var(--font-paragraph);
+  margin: 0;
+}
